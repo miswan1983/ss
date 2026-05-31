@@ -6,7 +6,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>SUSU SEHATI</title>
+<title>SUSUSEHATI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
@@ -29,10 +29,7 @@
 }
 html,body{height:100%;overflow:hidden;background:var(--bg)}
 body{font-family:var(--font);color:var(--txt);font-size:14px;line-height:1.5}
-
 .app{display:flex;flex-direction:column;height:100vh;max-width:430px;margin:0 auto;background:var(--bg);position:relative}
-
-/* Header */
 .hdr{background:var(--surface);padding:16px 16px 12px;border-bottom:1px solid var(--border);flex-shrink:0}
 .hdr-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}
 .brand{font-size:18px;font-weight:600;color:var(--txt);letter-spacing:-0.3px}
@@ -42,21 +39,15 @@ body{font-family:var(--font);color:var(--txt);font-size:14px;line-height:1.5}
 .notif-btn{width:34px;height:34px;border-radius:50%;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative}
 .notif-btn i{font-size:17px;color:var(--txt2)}
 .notif-dot{width:7px;height:7px;background:var(--coral);border-radius:50%;position:absolute;top:5px;right:5px;border:1.5px solid var(--surface)}
-
-/* Pages */
 .pages{flex:1;overflow:hidden;position:relative}
 .page{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:14px 14px 20px;display:none;opacity:0;transform:translateY(8px);transition:opacity .2s,transform .2s}
 .page.active{display:block;opacity:1;transform:translateY(0)}
-
-/* Stats */
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
 .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:13px 14px;box-shadow:var(--shadow)}
 .stat-icon{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
 .stat-icon i{font-size:17px}
 .stat-val{font-size:20px;font-weight:600;color:var(--txt);line-height:1.1}
 .stat-lbl{font-size:11px;color:var(--txt2);margin-top:2px}
-
-/* Quick actions */
 .quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
 .quick-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:14px 12px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;cursor:pointer;box-shadow:var(--shadow);transition:all .15s;text-align:left}
 .quick-card:active{transform:scale(.96);box-shadow:none}
@@ -64,17 +55,10 @@ body{font-family:var(--font);color:var(--txt);font-size:14px;line-height:1.5}
 .quick-ic i{font-size:20px}
 .quick-lbl{font-size:13px;font-weight:600;color:var(--txt)}
 .quick-sub{font-size:11px;color:var(--txt2)}
-
-/* Section header */
 .sec-hdr{display:flex;align-items:center;justify-content:space-between;margin:14px 0 8px}
 .sec-title{font-size:13px;font-weight:600;color:var(--txt)}
 .sec-link{font-size:12px;color:var(--teal);cursor:pointer;font-weight:500}
-
-/* Card */
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shadow);margin-bottom:12px}
-.card-pad{padding:14px}
-
-/* List items */
 .list-item{display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:1px solid var(--border)}
 .list-item:last-child{border-bottom:none}
 .item-ic{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -85,11 +69,7 @@ body{font-family:var(--font);color:var(--txt);font-size:14px;line-height:1.5}
 .item-right{text-align:right;flex-shrink:0}
 .item-val{font-size:13px;font-weight:600}
 .item-sub2{font-size:11px;color:var(--txt3)}
-
-/* Form */
 .form-section{background:var(--surface);border-radius:var(--rl);border:1px solid var(--border);padding:16px;margin-bottom:12px;box-shadow:var(--shadow)}
-.form-title{font-size:14px;font-weight:600;color:var(--txt);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.form-title i{font-size:18px}
 .f-grp{margin-bottom:12px}
 .f-grp:last-child{margin-bottom:0}
 .f-lbl{font-size:12px;font-weight:500;color:var(--txt2);margin-bottom:5px;display:block}
@@ -97,44 +77,29 @@ body{font-family:var(--font);color:var(--txt);font-size:14px;line-height:1.5}
 .f-inp:focus{border-color:var(--teal);background:var(--surface)}
 select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%236B7080' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px}
 .f-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-
-/* Preview box */
 .preview-box{border-radius:var(--r);padding:10px 12px;margin-bottom:12px;display:none}
 .preview-box.show{display:block}
 .preview-row{font-size:12px;font-weight:500;display:flex;justify-content:space-between}
-
-/* Big button */
 .big-btn{width:100%;padding:13px;border-radius:var(--rl);border:none;font-size:14px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .15s;font-family:var(--font);letter-spacing:0.1px}
 .big-btn:active{transform:scale(.97)}
 .btn-teal{background:var(--teal);color:#fff}
 .btn-teal:hover{background:var(--teal-d)}
 .btn-coral{background:var(--coral);color:#fff}
-.btn-amber{background:var(--amber);color:#fff}
-
-/* Toggle */
 .toggle-wrap{display:grid;grid-template-columns:1fr 1fr;background:var(--bg);border:1.5px solid var(--border);border-radius:var(--rl);padding:3px;margin-bottom:14px}
 .toggle-opt{padding:9px;font-size:13px;font-weight:500;text-align:center;cursor:pointer;color:var(--txt2);border-radius:12px;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
 .toggle-opt.on-masuk{background:var(--teal);color:#fff;box-shadow:0 2px 6px rgba(29,158,117,.35)}
 .toggle-opt.on-keluar{background:var(--coral);color:#fff;box-shadow:0 2px 6px rgba(216,90,48,.35)}
-
-/* Amount display */
 .amount-display{text-align:center;padding:10px 0 4px}
 .amount-prefix{font-size:16px;color:var(--txt2);font-weight:500}
 .amount-num{font-size:38px;font-weight:600;color:var(--txt);letter-spacing:-1.5px;line-height:1}
-
-/* Search */
 .search-wrap{display:flex;align-items:center;gap:8px;background:var(--surface);border:1.5px solid var(--border);border-radius:var(--rl);padding:10px 14px;margin-bottom:12px}
 .search-wrap i{font-size:17px;color:var(--txt3);flex-shrink:0}
 .search-wrap input{border:none;outline:none;background:transparent;flex:1;font-size:14px;color:var(--txt);font-family:var(--font)}
-
-/* Chips */
 .chip-wrap{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:10px;scrollbar-width:none}
 .chip-wrap::-webkit-scrollbar{display:none}
 .chip{font-size:12px;font-weight:500;padding:5px 12px;border-radius:999px;white-space:nowrap;cursor:pointer;border:1.5px solid transparent;transition:.15s}
 .chip-off{background:var(--surface);color:var(--txt2);border-color:var(--border)}
 .chip-on{background:var(--teal-l);color:var(--teal-d);border-color:var(--teal-m)}
-
-/* Stock row */
 .stk-row{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--border)}
 .stk-row:last-child{border-bottom:none}
 .stk-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
@@ -145,32 +110,19 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
 .stk-num{font-size:14px;font-weight:600}
 .stk-bar-wrap{width:48px;height:4px;background:var(--border);border-radius:999px;overflow:hidden;margin-top:4px;margin-left:auto}
 .stk-bar{height:100%;border-radius:999px}
-
-/* Alert item */
 .alert-row{display:flex;align-items:center;gap:10px;padding:9px 14px;border-bottom:1px solid var(--border)}
 .alert-row:last-child{border-bottom:none}
 .alert-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-
-/* Badge */
-.badge{font-size:11px;font-weight:500;padding:3px 8px;border-radius:999px}
-
-/* Bottom nav */
 .bottom-nav{background:var(--surface);border-top:1px solid var(--border);display:grid;grid-template-columns:repeat(5,1fr);flex-shrink:0;padding-bottom:env(safe-area-inset-bottom,0)}
 .nav-btn{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 4px 8px;cursor:pointer;transition:.15s;border:none;background:none;font-family:var(--font)}
 .nav-btn i{font-size:22px;color:var(--txt3);transition:.15s}
 .nav-btn span{font-size:10px;color:var(--txt3);font-weight:500;transition:.15s}
 .nav-btn.active i{color:var(--teal)}
 .nav-btn.active span{color:var(--teal)}
-
-/* Toast */
 .toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--txt);color:#fff;padding:10px 20px;border-radius:999px;font-size:13px;font-weight:500;white-space:nowrap;opacity:0;transition:all .25s;pointer-events:none;z-index:999;box-shadow:var(--shadow-md)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-
-/* Empty state */
 .empty{text-align:center;padding:24px 16px;color:var(--txt3);font-size:13px}
 .empty i{font-size:32px;display:block;margin-bottom:8px}
-
-/* Saldo card */
 .saldo-card{background:var(--teal);border-radius:var(--rl);padding:16px;margin-bottom:12px;color:#fff}
 .saldo-lbl{font-size:12px;opacity:.8;margin-bottom:4px}
 .saldo-val{font-size:28px;font-weight:600;letter-spacing:-0.5px}
@@ -179,8 +131,6 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
 .saldo-half:first-child{border-right:1px solid rgba(255,255,255,.2)}
 .saldo-half-lbl{font-size:11px;opacity:.7}
 .saldo-half-val{font-size:15px;font-weight:600;margin-top:2px}
-
-/* Page title */
 .pg-title{font-size:16px;font-weight:600;color:var(--txt);margin-bottom:14px;display:flex;align-items:center;gap:8px}
 .pg-title i{font-size:20px}
 </style>
@@ -201,7 +151,6 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
   </div>
 
   <div class="pages">
-    <!-- HOME -->
     <div id="pg-home" class="page active">
       <div class="stat-grid">
         <div class="stat-card">
@@ -225,7 +174,6 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
           <div class="stat-lbl">Stok habis</div>
         </div>
       </div>
-
       <div class="sec-hdr"><span class="sec-title">Aksi cepat</span></div>
       <div class="quick-grid">
         <div class="quick-card" onclick="switchTab('in')">
@@ -245,10 +193,8 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
           <div><div class="quick-lbl">Cek stok</div><div class="quick-sub">Lihat semua barang</div></div>
         </div>
       </div>
-
       <div class="sec-hdr"><span class="sec-title" id="alert-title">Perlu restok</span></div>
       <div class="card" id="alert-list"></div>
-
       <div class="sec-hdr">
         <span class="sec-title">Aktivitas terbaru</span>
         <span class="sec-link" onclick="switchTab('history')">Lihat semua</span>
@@ -256,7 +202,6 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
       <div class="card" id="recent-list"></div>
     </div>
 
-    <!-- BARANG MASUK -->
     <div id="pg-in" class="page">
       <div class="pg-title"><i class="ti ti-arrow-bar-to-down" style="color:var(--teal-d)"></i>Barang masuk</div>
       <div class="form-section">
@@ -291,12 +236,10 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
           <i class="ti ti-check"></i> Simpan barang masuk
         </button>
       </div>
-
       <div class="sec-hdr"><span class="sec-title">Masuk hari ini</span></div>
       <div class="card" id="in-hist"></div>
     </div>
 
-    <!-- BARANG KELUAR -->
     <div id="pg-out" class="page">
       <div class="pg-title"><i class="ti ti-arrow-bar-up" style="color:var(--coral)"></i>Barang keluar</div>
       <div class="form-section">
@@ -333,12 +276,10 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
           <i class="ti ti-check"></i> Simpan barang keluar
         </button>
       </div>
-
       <div class="sec-hdr"><span class="sec-title">Keluar hari ini</span></div>
       <div class="card" id="out-hist"></div>
     </div>
 
-    <!-- KEUANGAN -->
     <div id="pg-cash" class="page">
       <div class="saldo-card">
         <div class="saldo-lbl">Saldo bersih hari ini</div>
@@ -354,7 +295,6 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
           </div>
         </div>
       </div>
-
       <div class="form-section">
         <div class="toggle-wrap">
           <div class="toggle-opt on-masuk" id="tog-masuk" onclick="setType('masuk')">
@@ -389,12 +329,10 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
           <i class="ti ti-check"></i> Simpan
         </button>
       </div>
-
       <div class="sec-hdr"><span class="sec-title">Riwayat keuangan</span></div>
       <div class="card" id="cash-list"></div>
     </div>
 
-    <!-- STOK -->
     <div id="pg-stock" class="page">
       <div class="search-wrap">
         <i class="ti ti-search"></i>
@@ -404,7 +342,6 @@ select.f-inp{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmln
       <div class="card" id="stk-list"></div>
     </div>
 
-    <!-- HISTORY -->
     <div id="pg-history" class="page">
       <div class="pg-title"><i class="ti ti-history" style="color:var(--txt2)"></i>Semua riwayat</div>
       <div class="card" id="hist-list"></div>
@@ -471,8 +408,7 @@ function seedData(){
     ['Sedotan Besar','Kemasan',0,10],['Sedotan Kecil','Kemasan',0,10],
     ['Lid Seal','Kemasan',0,10],['Tutup Gelas','Kemasan',54,20],
     ['Kertas Print','ATK',1,2],['Isolasi Bening','ATK',1,2],['Isolasi Kertas','ATK',1,2],
-    ['Plastik Es Batu','Kemasan',2,5],
-    ['Kresek 28','Kemasan',1,5],['Kresek 40','Kemasan',0,5],
+    ['Plastik Es Batu','Kemasan',2,5],['Kresek 28','Kemasan',1,5],['Kresek 40','Kemasan',0,5],
     ['Tisu','Perlengkapan',0,3],['Superpel','Kebersihan',0,1],['Sunlight','Kebersihan',0,1],
     ['Avocado (Bungkus)','Bahan Minuman',0,2],['Banana (Bungkus)','Bahan Minuman',0,2],
     ['BG (Bungkus)','Bahan Minuman',0,2],['Capucino (Bungkus)','Bahan Minuman',0,2],
@@ -517,7 +453,7 @@ function seedData(){
 function switchTab(t){
   TABS.forEach(p=>{
     const pg=document.getElementById('pg-'+p);
-    if(pg){pg.classList.toggle('active',p===t);}
+    if(pg)pg.classList.toggle('active',p===t);
     const tb=document.getElementById('tab-'+p);
     if(tb)tb.classList.toggle('active',p===t);
   });
@@ -628,22 +564,13 @@ function renderHome(){
   const out=st.products.filter(p=>p.stock<=0).length;
   document.getElementById('s-low').textContent=low;
   document.getElementById('s-out').textContent=out;
-  const nd=document.getElementById('notif-dot');
-  nd.style.display=(low+out>0)?'block':'none';
+  document.getElementById('notif-dot').style.display=(low+out>0)?'block':'none';
 
   const alerts=st.products.filter(p=>p.stock<=p.minStock).slice(0,6);
-  const at=document.getElementById('alert-title');
-  at.textContent=`Perlu restok (${alerts.length})`;
+  document.getElementById('alert-title').textContent=`Perlu restok (${alerts.length})`;
   const al=document.getElementById('alert-list');
   if(!alerts.length){al.innerHTML='<div class="empty"><i class="ti ti-circle-check" style="color:var(--teal)"></i>Semua stok aman</div>';}
-  else{
-    al.innerHTML=alerts.map(p=>`
-      <div class="alert-row">
-        <div class="alert-dot" style="background:${p.stock<=0?'var(--red)':'var(--amber)'}"></div>
-        <div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:500;color:var(--txt);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.name}</div><div style="font-size:11px;color:var(--txt3)">${p.cat}</div></div>
-        <div style="font-size:13px;font-weight:600;color:${p.stock<=0?'var(--red)':'var(--amber)'}">${p.stock} ${p.stock<=0?'(Habis)':'(Menipis)'}</div>
-      </div>`).join('');
-  }
+  else{al.innerHTML=alerts.map(p=>`<div class="alert-row"><div class="alert-dot" style="background:${p.stock<=0?'var(--red)':'var(--amber)'}"></div><div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:500;color:var(--txt);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.name}</div><div style="font-size:11px;color:var(--txt3)">${p.cat}</div></div><div style="font-size:13px;font-weight:600;color:${p.stock<=0?'var(--red)':'var(--amber)'}">${p.stock} ${p.stock<=0?'(Habis)':'(Menipis)'}</div></div>`).join('');}
 
   const recent=[...st.stockHistory,...st.cashLedger].sort((a,b)=>b.id>a.id?1:-1).slice(0,6);
   const rl=document.getElementById('recent-list');
@@ -658,11 +585,7 @@ function itemHTML(r){
   const ic2=isMasuk?'var(--teal-d)':'var(--coral)';
   const name=r.product||r.cat;
   const val=r.amount?fmtS(r.amount):(isMasuk?'+':'-')+r.diff+'pcs';
-  return `<div class="list-item">
-    <div class="item-ic" style="background:${ibg}"><i class="ti ${ic}" style="color:${ic2}"></i></div>
-    <div class="item-info"><div class="item-name">${name}</div><div class="item-sub">${r.time||''} · ${r.note||''}</div></div>
-    <div class="item-right"><div class="item-val" style="color:${ic2}">${isMasuk?'+':'-'}${val}</div><div class="item-sub2">${r.date||''}</div></div>
-  </div>`;
+  return `<div class="list-item"><div class="item-ic" style="background:${ibg}"><i class="ti ${ic}" style="color:${ic2}"></i></div><div class="item-info"><div class="item-name">${name}</div><div class="item-sub">${r.time||''} · ${r.note||''}</div></div><div class="item-right"><div class="item-val" style="color:${ic2}">${isMasuk?'+':'-'}${val}</div><div class="item-sub2">${r.date||''}</div></div></div>`;
 }
 
 function renderInHist(){
@@ -670,12 +593,7 @@ function renderInHist(){
   const items=st.stockHistory.filter(h=>h.date===today&&h.type==='Masuk');
   const el=document.getElementById('in-hist');
   if(!items.length){el.innerHTML='<div class="empty"><i class="ti ti-package"></i>Belum ada barang masuk hari ini</div>';return;}
-  el.innerHTML=items.map(h=>`
-    <div class="list-item">
-      <div class="item-ic" style="background:var(--teal-l)"><i class="ti ti-arrow-bar-to-down" style="color:var(--teal-d)"></i></div>
-      <div class="item-info"><div class="item-name">${h.product}</div><div class="item-sub">${h.time} · ${h.note}</div></div>
-      <div class="item-right"><div class="item-val" style="color:var(--teal-d)">+${h.diff}</div><div class="item-sub2">${h.before} → ${h.after}</div></div>
-    </div>`).join('');
+  el.innerHTML=items.map(h=>`<div class="list-item"><div class="item-ic" style="background:var(--teal-l)"><i class="ti ti-arrow-bar-to-down" style="color:var(--teal-d)"></i></div><div class="item-info"><div class="item-name">${h.product}</div><div class="item-sub">${h.time} · ${h.note}</div></div><div class="item-right"><div class="item-val" style="color:var(--teal-d)">+${h.diff}</div><div class="item-sub2">${h.before} → ${h.after}</div></div></div>`).join('');
 }
 
 function renderOutHist(){
@@ -683,12 +601,7 @@ function renderOutHist(){
   const items=st.stockHistory.filter(h=>h.date===today&&h.type==='Keluar');
   const el=document.getElementById('out-hist');
   if(!items.length){el.innerHTML='<div class="empty"><i class="ti ti-package"></i>Belum ada barang keluar hari ini</div>';return;}
-  el.innerHTML=items.map(h=>`
-    <div class="list-item">
-      <div class="item-ic" style="background:var(--coral-l)"><i class="ti ti-arrow-bar-up" style="color:var(--coral)"></i></div>
-      <div class="item-info"><div class="item-name">${h.product}</div><div class="item-sub">${h.time} · ${h.note}</div></div>
-      <div class="item-right"><div class="item-val" style="color:var(--coral)">-${h.diff}</div><div class="item-sub2">${h.before} → ${h.after}</div></div>
-    </div>`).join('');
+  el.innerHTML=items.map(h=>`<div class="list-item"><div class="item-ic" style="background:var(--coral-l)"><i class="ti ti-arrow-bar-up" style="color:var(--coral)"></i></div><div class="item-info"><div class="item-name">${h.product}</div><div class="item-sub">${h.time} · ${h.note}</div></div><div class="item-right"><div class="item-val" style="color:var(--coral)">-${h.diff}</div><div class="item-sub2">${h.before} → ${h.after}</div></div></div>`).join('');
 }
 
 function renderCash(){
@@ -702,36 +615,22 @@ function renderCash(){
   const cl=document.getElementById('cash-list');
   const all=st.cashLedger.slice(0,20);
   if(!all.length){cl.innerHTML='<div class="empty"><i class="ti ti-cash"></i>Belum ada catatan keuangan</div>';return;}
-  cl.innerHTML=all.map(x=>`
-    <div class="list-item">
-      <div class="item-ic" style="background:${x.type==='masuk'?'var(--teal-l)':'var(--coral-l)'}"><i class="ti ti-${x.type==='masuk'?'arrow-bar-to-down':'arrow-bar-up'}" style="color:${x.type==='masuk'?'var(--teal-d)':'var(--coral)'}"></i></div>
-      <div class="item-info"><div class="item-name">${x.cat}</div><div class="item-sub">${x.date} ${x.time} · ${x.note}</div></div>
-      <div class="item-right"><div class="item-val" style="color:${x.type==='masuk'?'var(--teal-d)':'var(--coral)'}">${x.type==='masuk'?'+':'-'}${fmtS(x.amount)}</div></div>
-    </div>`).join('');
+  cl.innerHTML=all.map(x=>`<div class="list-item"><div class="item-ic" style="background:${x.type==='masuk'?'var(--teal-l)':'var(--coral-l)'}"><i class="ti ti-${x.type==='masuk'?'arrow-bar-to-down':'arrow-bar-up'}" style="color:${x.type==='masuk'?'var(--teal-d)':'var(--coral)'}"></i></div><div class="item-info"><div class="item-name">${x.cat}</div><div class="item-sub">${x.date} ${x.time} · ${x.note}</div></div><div class="item-right"><div class="item-val" style="color:${x.type==='masuk'?'var(--teal-d)':'var(--coral)'}">${x.type==='masuk'?'+':'-'}${fmtS(x.amount)}</div></div></div>`).join('');
 }
 
 function renderStock(){
   const q=(document.getElementById('stk-q').value||'').toLowerCase();
   const cats=[...new Set(st.products.map(p=>p.cat||'Umum'))];
-  document.getElementById('cat-chips').innerHTML=
-    `<div class="chip ${!catFilter?'chip-on':'chip-off'}" onclick="filterCat('')">Semua</div>`+
-    cats.map(c=>`<div class="chip ${catFilter===c?'chip-on':'chip-off'}" onclick="filterCat('${c}')">${c}</div>`).join('');
-  const prods=st.products.filter(p=>{
-    const mq=p.name.toLowerCase().includes(q)||(p.cat||'').toLowerCase().includes(q);
-    const mc=!catFilter||p.cat===catFilter;
-    return mq&&mc;
-  });
+  document.getElementById('cat-chips').innerHTML=`<div class="chip ${!catFilter?'chip-on':'chip-off'}" onclick="filterCat('')">Semua</div>`+cats.map(c=>`<div class="chip ${catFilter===c?'chip-on':'chip-off'}" onclick="filterCat('${c}')">${c}</div>`).join('');
+  const prods=st.products.filter(p=>(p.name.toLowerCase().includes(q)||(p.cat||'').toLowerCase().includes(q))&&(!catFilter||p.cat===catFilter));
   const el=document.getElementById('stk-list');
   if(!prods.length){el.innerHTML='<div class="empty"><i class="ti ti-search-off"></i>Produk tidak ditemukan</div>';return;}
-  el.innerHTML=prods.map((p,i)=>{
+  const allCats=[...new Set(st.products.map(x=>x.cat))];
+  el.innerHTML=prods.map(p=>{
     const pct=Math.min(100,Math.round(p.stock/Math.max(p.minStock*3,1)*100));
     const c=p.stock<=0?'var(--red)':p.stock<=p.minStock?'var(--amber)':'var(--teal)';
-    const dot=CAT_DOTS[([...new Set(st.products.map(x=>x.cat))].indexOf(p.cat))%CAT_DOTS.length];
-    return `<div class="stk-row">
-      <div class="stk-dot" style="background:${dot}"></div>
-      <div class="stk-info"><div class="stk-name">${p.name}</div><div class="stk-cat">${p.cat||'Umum'}</div></div>
-      <div class="stk-right"><div class="stk-num" style="color:${c}">${p.stock}</div><div class="stk-bar-wrap"><div class="stk-bar" style="width:${pct}%;background:${c}"></div></div></div>
-    </div>`;
+    const dot=CAT_DOTS[allCats.indexOf(p.cat)%CAT_DOTS.length];
+    return `<div class="stk-row"><div class="stk-dot" style="background:${dot}"></div><div class="stk-info"><div class="stk-name">${p.name}</div><div class="stk-cat">${p.cat||'Umum'}</div></div><div class="stk-right"><div class="stk-num" style="color:${c}">${p.stock}</div><div class="stk-bar-wrap"><div class="stk-bar" style="width:${pct}%;background:${c}"></div></div></div></div>`;
   }).join('');
 }
 
