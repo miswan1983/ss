@@ -6,7 +6,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>SUSUSEHATI</title>
+<title>SUSU SEHATI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
@@ -389,7 +389,7 @@ function toast(msg){
 
 function load(){
   try{
-    const raw=localStorage.getItem('tokomanager-v2');
+    const raw=localStorage.getItem('sususehati-v2');
     if(raw){const s=JSON.parse(raw);st.products=s.products||[];st.stockHistory=s.stockHistory||[];st.cashLedger=s.cashLedger||[];}
   }catch(e){}
   if(!st.products.length) seedData();
@@ -399,7 +399,7 @@ function load(){
 }
 
 function save(){
-  try{localStorage.setItem('tokomanager-v2',JSON.stringify(st));}catch(e){}
+  try{localStorage.setItem('sususehati-v2',JSON.stringify(st));}catch(e){}
 }
 
 function seedData(){
